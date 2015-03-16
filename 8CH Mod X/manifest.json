@@ -1,0 +1,16 @@
+{
+  "name": "8CH Mod-X",
+  "version": "0.1",
+  "description": "8CH Mod extention",
+  "background": { 
+     "page":"bg.html"
+     },
+   "manifest_version": 2,
+   "content_scripts": [
+   {
+     "matches": ["http://8ch.net/*", "https://8ch.net/*"],
+     "js": ["content.js"]
+   }
+   ],
+  "permissions": ["tabs"]
+}
